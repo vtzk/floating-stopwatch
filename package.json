@@ -1,0 +1,27 @@
+{
+  "name": "floating-stopwatch",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository": "git@github.com:vtzk/floating-stopwatch.git",
+  "author": "Vladimir Tribuesan",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint 'src/**/*.@(js|jsx)'",
+    "format": "prettier --write 'src/**/*.@(js|jsx)'",
+    "start": "electron .",
+    "pkg:mac": "electron-packager . FloatinStopwatch --overwrite --prune=true"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.5.1",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "electron": "^1.8.8"
+  }
+}
